@@ -47,7 +47,21 @@
 //     negativeN++; // negativeN++ это (negativeN = negativen + 1)
 // }
 
+//а-- Декременет: а = а - 1.
+//а++ Инкремент: а = а + 1.
 
-int a = 10;
-a--; //Декременет: а = а - 1.
-Console.WriteLine(a);
+// int a = 10;
+// a--; 
+// Console.WriteLine(a);
+
+
+// Задача нахождения 3-го числа слева 
+Console.Write("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+if (number <= 999) return;
+while (number > 999)
+{
+    number /= 10; //number = number / 10
+}
+
+Console.WriteLine(number % 10);
