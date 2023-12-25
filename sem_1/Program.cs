@@ -69,23 +69,27 @@
 // Задача 1 семинара 1
 // Создать программу которая проверяет какое из двух чисел является большее 
 // и выводит его на экран а так же выводит на экран числа равные по значению
-Console.Write("Input first number: " );
-int firstNumber = Convert.ToInt32 (Console.ReadLine());
-Console.Write("Input second number: " );
-int secondNumber = Convert.ToInt32 (Console.ReadLine());
+Console.Write("Input first number: ");
+int firstNumber = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input second number: ");
+int secondNumber = Convert.ToInt32(Console.ReadLine());
 
-   if (firstNumber < secondNumber)
-         {
-           Console.WriteLine("Первое число " + "`" + firstNumber + "`" + " меньше чем второе число " + "`" + secondNumber + "`");
-         }
-         
-         else
-         {
-            if (firstNumber > secondNumber) 
-         }
-           Console.WriteLine("Первое число " + "`" + firstNumber + "`" + " больше чем второе число " + "`" + secondNumber + "`");
-         
-           else
-           {
-               Console.WriteLine("Введенные числа равны " + "`" + firstNumber + "`");
-           }
+if (firstNumber < secondNumber)
+{
+    Console.WriteLine("Первое число " + "`" + firstNumber + "`" + " меньше чем второе число " + "`" + secondNumber + "`");
+}
+else
+
+         if (firstNumber > secondNumber)
+{
+    Console.WriteLine("Первое число " + "`" + firstNumber + "`" + " больше чем второе число " + "`" + secondNumber + "`");
+}
+
+
+
+
+             else
+{
+    Console.WriteLine("Введенные числа равны " + "`" + firstNumber + "`");
+}
+
