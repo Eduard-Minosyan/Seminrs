@@ -29,22 +29,25 @@
 //     Console.WriteLine("НЕТ, " + firstNumber + " НЕ является кв. от числа " + secondNumber);
 // }
 
-Console.Write("Введите число N: ");
-int N = Convert.ToInt32(Console.ReadLine());
-//N = 4, 4 * (-1) = -4
-if (N < 0)
-{
-    Console.WriteLine("Введено отрицательное число N");
-    N = N * -1;
-}
+// Console.Write("Введите число N: ");
+// int N = Convert.ToInt32(Console.ReadLine());
+// //N = 4, 4 * (-1) = -4
+// if (N < 0)
+// {
+//     Console.WriteLine("Введено отрицательное число N");
+//     N = N * -1;
+// }
 
-int negativeN = N * -1; // -4
-
-
-while (negativeN <= N)
-{
-    Console.Write(negativeN + " ");
-    negativeN++; // negativeN++ это (negativeN = negativen + 1)
-}
+// int negativeN = N * -1; // -4
 
 
+// while (negativeN <= N)
+// {
+//     Console.Write(negativeN + " ");
+//     negativeN++; // negativeN++ это (negativeN = negativen + 1)
+// }
+
+
+int a = 10;
+a--; //Декременет: а = а - 1.
+Console.WriteLine(a);
