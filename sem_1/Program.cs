@@ -74,18 +74,18 @@ int firstNumber = Convert.ToInt32 (Console.ReadLine());
 Console.Write("Input second number: " );
 int secondNumber = Convert.ToInt32 (Console.ReadLine());
 
-if (firstNumber > secondNumber)
+   if (firstNumber < secondNumber)
          {
-           Console.WriteLine(firstNumber);
+           Console.WriteLine("Первое число " + "`" + firstNumber + "`" + " меньше чем второе число " + "`" + secondNumber + "`");
          }
+         
          else
          {
-            if (firstNumber == secondNumber) 
-         {
-           Console.Write (firstNumber);
+            if (firstNumber > secondNumber) 
          }
+           Console.WriteLine("Первое число " + "`" + firstNumber + "`" + " больше чем второе число " + "`" + secondNumber + "`");
+         
            else
            {
-               Console.WriteLine(secondNumber);
+               Console.WriteLine("Введенные числа равны " + "`" + firstNumber + "`");
            }
-         }
