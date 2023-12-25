@@ -56,9 +56,9 @@
 
 
 // Задача нахождения 3-го числа слева 
-Console.Write("Введите число: ");
+Console.Write("Введите трехзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-if (number <= 999) return;
+if (number <= 99) return;
 while (number > 999)
 {
     number /= 10; //number = number / 10
