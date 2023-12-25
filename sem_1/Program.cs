@@ -56,12 +56,36 @@
 
 
 // Задача нахождения 3-го числа слева 
-Console.Write("Введите трехзначное число: ");
-int number = Convert.ToInt32(Console.ReadLine());
-if (number <= 99) return;
-while (number > 999)
-{
-    number /= 10; //number = number / 10
-}
+// Console.Write("Введите трехзначное число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// if (number <= 99) return;
+// while (number > 999)
+// {
+//     number /= 10; //number = number / 10
+// }
 
-Console.WriteLine(number % 10);
+// Console.WriteLine(number % 10);
+
+// Задача 1 семинара 1
+// Создать программу которая проверяет какое из двух чисел является большее 
+// и выводит его на экран а так же выводит на экран числа равные по значению
+Console.Write("Input first number: " );
+int firstNumber = Convert.ToInt32 (Console.ReadLine());
+Console.Write("Input second number: " );
+int secondNumber = Convert.ToInt32 (Console.ReadLine());
+
+if (firstNumber > secondNumber)
+         {
+           Console.WriteLine(firstNumber);
+         }
+         else
+         {
+            if (firstNumber == secondNumber) 
+         {
+           Console.Write (firstNumber);
+         }
+           else
+           {
+               Console.WriteLine(secondNumber);
+           }
+         }
