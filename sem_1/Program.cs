@@ -1,11 +1,11 @@
 ﻿
 // int number = 9; //number = 9
 // int result = number * number; // 81
-// Console.Write (result);
+// Console.Write(result);
 
-// Console.Write ("Введите число: ");
+// Console.Write("Введите число: ");
 // int input = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine (input + 1000);
+// Console.WriteLine(input + 1000);
 
 
 // Команда "Console.ReadLine()" Позволяет вводить информацию пользователю.
@@ -47,11 +47,11 @@
 //     negativeN++; // negativeN++ это (negativeN = negativen + 1)
 // }
 
-//а-- Декременет: а = а - 1.
-//а++ Инкремент: а = а + 1.
+// а-- Декременет: а = а - 1.
+// а++ Инкремент: а = а + 1.
 
 // int a = 10;
-// a--; 
+// a--;
 // Console.WriteLine(a);
 
 
@@ -69,6 +69,7 @@
 // Задача 1 семинара 1
 // Создать программу которая проверяет какое из двух чисел является большее 
 // и выводит его на экран а так же выводит на экран числа равные по значению
+
 // Console.Write("Input first number: ");
 // int firstNumber = Convert.ToInt32(Console.ReadLine());
 // Console.Write("Input second number: ");
@@ -88,21 +89,48 @@
 
 
 
-//              else
+// else
 // {
 //     Console.WriteLine("Введенные числа равны " + "`" + firstNumber + "`");
 // }
 
 // Задача 2 семинара 1 Проверка чисел на четность
-Console.Write("Введите число");
-int number = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число");
+// int number = Convert.ToInt32(Console.ReadLine());
 
-if (number % 2 == 0)
-      {
-        Console.WriteLine("Число" + " `" + number + "` " + "чётное" );
-      }
-      
-      else
-      {
-        Console.WriteLine("Число" + " `" + number + "` " + "нечётное" );
-      }
+// if (number % 2 == 0)
+// {
+//     Console.WriteLine("Число" + " `" + number + "` " + "чётное");
+// }
+
+// else
+// {
+//     Console.WriteLine("Число" + " `" + number + "` " + "нечётное");
+// }
+// Задача 2 семинара 1 Ввод 3-х чисел и нахождение максимального из них.
+
+// Console.Write("Введите первое число ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите второе число ");
+// int b = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите третье число ");
+// int c = Convert.ToInt32(Console.ReadLine());
+
+// if (a > b && a > c)
+// {
+//     Console.WriteLine(a);
+//     return (a);
+// }
+// else
+
+//   if (a < b && b > c)
+// {
+//     Console.WriteLine(b);
+//     return (b);
+// }
+// else
+// {
+//     Console.WriteLine(c);
+//     return (c);
+// }
+
