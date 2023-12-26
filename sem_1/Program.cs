@@ -69,27 +69,40 @@
 // Задача 1 семинара 1
 // Создать программу которая проверяет какое из двух чисел является большее 
 // и выводит его на экран а так же выводит на экран числа равные по значению
-Console.Write("Input first number: ");
-int firstNumber = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input second number: ");
-int secondNumber = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input first number: ");
+// int firstNumber = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input second number: ");
+// int secondNumber = Convert.ToInt32(Console.ReadLine());
 
-if (firstNumber < secondNumber)
-{
-    Console.WriteLine("Первое число " + "`" + firstNumber + "`" + " меньше чем второе число " + "`" + secondNumber + "`");
-}
-else
+// if (firstNumber < secondNumber)
+// {
+//     Console.WriteLine("Первое число " + "`" + firstNumber + "`" + " меньше чем второе число " + "`" + secondNumber + "`");
+// }
+// else
 
-         if (firstNumber > secondNumber)
-{
-    Console.WriteLine("Первое число " + "`" + firstNumber + "`" + " больше чем второе число " + "`" + secondNumber + "`");
-}
-
-
+//          if (firstNumber > secondNumber)
+// {
+//     Console.WriteLine("Первое число " + "`" + firstNumber + "`" + " больше чем второе число " + "`" + secondNumber + "`");
+// }
 
 
-             else
-{
-    Console.WriteLine("Введенные числа равны " + "`" + firstNumber + "`");
-}
 
+
+//              else
+// {
+//     Console.WriteLine("Введенные числа равны " + "`" + firstNumber + "`");
+// }
+
+// Задача 2 семинара 1 Проверка чисел на четность
+Console.Write("Введите число");
+int number = Convert.ToInt32(Console.ReadLine());
+
+if (number % 2 == 0)
+      {
+        Console.WriteLine("Число" + " `" + number + "` " + "чётное" );
+      }
+      
+      else
+      {
+        Console.WriteLine("Число" + " `" + number + "` " + "нечётное" );
+      }
