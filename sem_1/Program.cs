@@ -43,7 +43,7 @@
 
 // while (negativeN <= N)
 // {
-//     Console.Write(negativeN + " ");
+//     Console.Write(negativeN + " \t ");
 //     negativeN++; // negativeN++ это (negativeN = negativen + 1)
 // }
 
@@ -134,3 +134,15 @@
 //     return (c);
 // }
 
+// Задача 4 семинар 1 Принимает число N и выводит все четные числа от 1 до N
+// включительно разделенные знаком табуляции.
+    Console.Write("Введите число ");
+  int n = Convert.ToInt32(Console.ReadLine());
+  int i = 1;
+  while (i <= n)
+  {
+    
+    if (i % 2 == 0)
+    Console.Write(i +"\t");
+    i++;
+  }
