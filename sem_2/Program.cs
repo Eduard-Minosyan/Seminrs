@@ -66,22 +66,51 @@
 // 7891 => 9
 // 32 => Третьей цифры нет
 
-Console.Write("Введите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
-int copyNumber = number;
+// Console.Write("Введите число: ");
+//  int number = Convert.ToInt32(Console.ReadLine());
+//  int copyNumber = number;
 
-if (number < 100) // Третьей цифрын ет
-{
-   Console.WriteLine("Третьей цифры нет :)");
-}
+// if (number < 100) // Третьей цифрын ет
+// {
+//    Console.WriteLine("Третьей цифры нет :)");
+// }
 
-else
-{
-    while (number > 999)// Если в числе минимум 4 цифры делаем 
-    {
-        number /= 10; // number = number / 10
-        //a = a * 50: a *= 50
-        //a  = a - 450: a -= 450
-    }
-    Console.WriteLine($"Третья цифра от числа {copyNumber} = {number % 10}");
-}
+// else
+// {
+//     while (number > 999)// Если в числе минимум 4 цифры делаем 
+//     {
+//         number /= 10; // number = number / 10
+//         //a = a * 50: a *= 50
+//         //a  = a - 450: a -= 450
+//     }
+//     Console.WriteLine($"Третья цифра от числа {copyNumber} = {number % 10}");
+// }
+
+//Семинар 2 Задача 4
+
+//Получите 3-ю цифру введенного числа справа (с конца)
+// 1234567 => 3
+// 7891 => 9
+// 32 => Третьей цифры нет
+
+
+// Console.Write("Введите число: ");
+//   int number = Convert.ToInt32(Console.ReadLine());
+//   int copyNumber = number;
+
+//   if (number < 100) // Третьей цифрын ет
+// {
+//     Console.WriteLine("Третьей цифры нет :)");
+// }
+
+// else // Число минимум трехзначное
+// {
+//     int digitCount =0; // Колитчество цифр, которое нужно убрать
+//     //int digit =0; // Третья цифра справа
+//     while (digitCount<2) // Отбрасываем 2 цифры
+//     {
+//         number /=10;
+//         digitCount++;
+//     }
+//     Console.WriteLine(number % 10);
+// }
