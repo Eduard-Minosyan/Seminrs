@@ -34,7 +34,7 @@
 //         isFound = "Найден";
 //         break;
 //     }
-       
+
 // }
 //  Console.WriteLine($"Элемент {numberForSearch}: {isFound} ");
 
@@ -93,19 +93,75 @@
 // i - индекс первого элемента
 // j - индекс последнего элемента
 
-int[] array = {1, -2, 3, 4, 5, -1, -7, -9, 10, -4};
-int[] result = new int [array.Length / 2];
+// int[] array = {1, -2, 3, 4, 5, -1, -7, -9, 10, -4};
+// int[] result = new int [array.Length / 2];
 
-for (int i = 0, j = array.Length - 1; i < result.Length; i++, j--)
+// for (int i = 0, j = array.Length - 1; i < result.Length; i++, j--)
+// {
+//     // а = [10, 20, 30, 40], r = [0, 0]
+//     // res[0] = a[0] * a[3] => 400
+//     // i++(1), j--(2)
+//     // res[1] = a[1] * a[2] => 600
+//     result[i] = array[i] * array[j];
+// }
+// Console.WriteLine($"Массив: [ {string.Join("; ", array)} ]");
+// Console.WriteLine($"Результат: [ {string.Join("; ", result)} ]");
+
+
+// Console.WriteLine(CountItemsRange(array,10,90));
+
+// Найти количество элементов находящихся в диапозоне между [10, 90].
+// int[] array = {1, 5, 10, 20, 30, 40, 99, 4, 90, 3};
+// int count = 0;
+// for (int i = 0; i < array.Length; i++)
+// {
+//     if ( array[i] >=10 && array[i] <= 90 )
+//     {
+//         count ++;
+//     }
+
+// }
+// Console.WriteLine(count);
+
+// Задайте массив на 10 целых чисел. Напишите программу, 
+// которая определяет количество чётных чисел в массиве.
+
+// int[] array = { 2, 5, 2, 3, 6, 3, 7, 8, 2, 4 };
+// int count = 0;
+
+// for (int i = 0; i < array.Length; i++)
+// {
+//     if (array[i] % 2 == 0)
+//     {
+//         count++;
+//     }
+// }
+// Console.WriteLine(count);
+
+
+
+
+// Задайте массив из вещественных чисел с ненулевой дробной частью. 
+// Найдите разницу между максимальным и минимальным элементов массива.
+
+
+double[] array = {0.25, 5.4, 1.3, 2.1, 3.8, 5.2, 3.01};
+double min = array[0] ;
+for (int i = 0; i < array.Length; i++)
 {
-    // а = [10, 20, 30, 40], r = [0, 0]
-    // res[0] = a[0] * a[3] => 400
-    // i++(1), j--(2)
-    // res[1] = a[1] * a[2] => 600
-    result[i] = array[i] * array[j];
+    if (array[i] < min)
+    {
+        min = array[i];
+    }
+   
 }
-Console.WriteLine($"Массив: [ {string.Join("; ", array)} ]");
-Console.WriteLine($"Результат: [ {string.Join("; ", result)} ]");
+double max = array [0];
+for (int i = 0; i < array.Length; i++) 
+{
+    if(array[i] > max)
+    {
+        max = array[i];
+    }
 
-
-Console.WriteLine(CountItemsRange(array,10,90));
+} 
+ Console.WriteLine(max - min);
